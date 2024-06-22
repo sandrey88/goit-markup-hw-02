@@ -1,0 +1,169 @@
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --logo-font: "Raleway", sans-serif;
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: #2e2f42;
+    --green: #31d0aa;
+    --slate: #434455;
+    --light-slate: #8e8f99;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --grey: rgba(46, 47, 66, 0.7);
+    --white: #fff;
+    --dairy: #fcfcfc;
+}
+
+/* #region Base styles */
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    background-color: var(--white);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--white);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* #endregion */
+
+/* #region Navigation */
+nav a {
+    font-weight: 500;
+    color: var(--navy-blue);
+}
+
+nav a:hover,
+a:focus {
+    color: var(--ocean);
+}
+/* #endregion */
+
+/* #region Logo */
+.logo {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--navy-blue);
+}
+
+.logo:hover, .logo:focus {
+    color: var(--navy-blue);
+}
+
+.logo span {
+    color: var(--iris);
+}
+/* #endregion */
+
+/* #region Address */
+address a {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--slate);
+}
+
+address a:hover,
+a:focus {
+    color: var(--ocean);
+}
+/* #endregion */
+
+/* #region Section Title */
+.section-title {
+    background-color: var(--navy-blue);
+}
+
+.btn-order {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    background-color: var(--iris);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-order:hover,
+.btn-order:focus {
+    background-color: var(--ocean);
+}
+/* #endregion */
+
+/* #region Section Team */
+.section-team {
+    background-color: var(--cloud);
+}
+
+ul.team-list li {
+    text-align: center;
+    background-color: var(--white);
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+    color: var(--cloud);
+    background-color: var(--navy-blue);
+}
+
+/* Logo in footer */
+footer a.logo {
+    color: var(--cloud);
+} 
+
+footer a.logo:hover,
+a.logo:focus {
+    color: var(--cloud);
+}
+/* #endregion */
