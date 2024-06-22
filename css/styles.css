@@ -18,48 +18,14 @@
 /* #region Base styles */
 body {
     font-family: var(--primary-font);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--slate);
     background-color: var(--white);
-}
-
-h1,
-h2 {
-    text-align: center;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    color: var(--white);
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
 }
 
 h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
 }
 
 ul {
@@ -92,34 +58,50 @@ a:focus {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--navy-blue);
+    color: var(--iris);
 }
 
 .logo:hover, .logo:focus {
+    color: var(--iris);
+}
+
+.logo-sub-clr {
     color: var(--navy-blue);
 }
 
-.logo span {
-    color: var(--iris);
+.logo-sub-clr-ftr {
+    color: var(--cloud);
 }
 /* #endregion */
 
 /* #region Address */
-address a {
+
+.mail-tel {
     font-style: normal;
-    text-decoration: none;
-    color: var(--slate);
 }
 
-address a:hover,
-a:focus {
+.mail-tel-link {
+    color: inherit;
+}
+
+.mail-tel-link:hover,
+.mail-tel-link:focus {
     color: var(--ocean);
 }
 /* #endregion */
 
-/* #region Section Title */
-.section-title {
+/* #region Section Heading */
+.section-heading {
     background-color: var(--navy-blue);
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
 }
 
 .btn-order {
@@ -140,30 +122,82 @@ a:focus {
 }
 /* #endregion */
 
+/* #region Common */
+.sub-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+}
+
+.item-title,
+.card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.card-title {
+    text-align: center;
+}
+
+.item-txt,
+.card-txt {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.card-title,
+.card-txt {
+    text-align: center;
+}
+/* #endregion */
+
+/* #region Section About */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+/* #endregion */
+
 /* #region Section Team */
 .section-team {
     background-color: var(--cloud);
 }
 
-ul.team-list li {
+.member-card {
     text-align: center;
     background-color: var(--white);
 }
 /* #endregion */
 
+/* #region Section Portfolio */
+
+/* #endregion */
+
 /* #region Footer */
-footer {
-    color: var(--cloud);
+.footer {
     background-color: var(--navy-blue);
 }
 
-/* Logo in footer */
-footer a.logo {
-    color: var(--cloud);
-} 
-
-footer a.logo:hover,
-a.logo:focus {
+.footer-txt {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--cloud);
 }
 /* #endregion */
